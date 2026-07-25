@@ -15,14 +15,14 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { to: "/", label: "Overview", icon: LayoutDashboard },
-  { to: "/impact", label: "My Impact", icon: Sparkles },
-  { to: "/communities", label: "My Communities", icon: Users },
-  { to: "#", label: "Opportunities", icon: Compass },
-  { to: "#", label: "Resources", icon: BookOpen },
-  { to: "#", label: "Atlas Marketplace", icon: Store },
-  { to: "#", label: "Learning Hub", icon: GraduationCap },
-  { to: "#", label: "Settings", icon: Settings },
+  { to: "/", label: "Overview", icon: LayoutDashboard, disabled: false },
+  { to: "/impact", label: "My Impact", icon: Sparkles, disabled: false },
+  { to: "/communities", label: "My Communities", icon: Users, disabled: false },
+  { to: "/", label: "Opportunities", icon: Compass, disabled: true },
+  { to: "/", label: "Resources", icon: BookOpen, disabled: true },
+  { to: "/", label: "Atlas Marketplace", icon: Store, disabled: true },
+  { to: "/", label: "Learning Hub", icon: GraduationCap, disabled: true },
+  { to: "/", label: "Settings", icon: Settings, disabled: true },
 ] as const;
 
 function AtlasMark({ className = "" }: { className?: string }) {
